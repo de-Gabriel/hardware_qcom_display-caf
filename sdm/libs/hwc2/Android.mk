@@ -10,8 +10,7 @@ LOCAL_MODULE_RELATIVE_PATH    := hw
 LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := $(common_includes)
 LOCAL_HEADER_LIBRARIES        := display_headers
-
-LOCAL_CFLAGS                  := -Wno-missing-field-initializers -Wno-unused-parameter \
+LOCAL_CFLAGS                  := -Wno-implicit-fallthrough -Wno-missing-field-initializers -Wno-unused-parameter \
                                  -std=c++11 -fcolor-diagnostics\
                                  -DLOG_TAG=\"SDM\" $(common_flags) \
                                  -I $(display_top)/sdm/libs/hwc
